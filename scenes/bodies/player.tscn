@@ -8,6 +8,8 @@ script = ExtResource("2_dcweq")
 thrust_force = 2000000.0
 mass_rate = 50000.0
 colour = Color(1, 0, 0, 1)
+polarity = 1
 
 [node name="Camera2D" type="Camera2D" parent="." index="1" unique_id=1418775066]
+zoom = Vector2(2, 2)
 position_smoothing_enabled = true
