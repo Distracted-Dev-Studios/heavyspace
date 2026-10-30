@@ -5,8 +5,9 @@ extends Node2D
 
 
 func _process(_delta: float) -> void:
-	label.text = "Mass: %.1f\nSpeed: %.0f\nOrbit Locked?: %s\nQ/E: Size\nF: Lock Orbit\nR: restart" % [
+	label.text = "Mass: %.1f\nRadius: %.1f\nSpeed: %.0f\nOrbit Locked?: %s\nQ/E: Size\nF: Lock Orbit\nR: restart" % [
 		player.mass,
+		player.radius,
 		player.velocity.length(),
 		"True" if player.is_orbit_locked else "False",
 	]

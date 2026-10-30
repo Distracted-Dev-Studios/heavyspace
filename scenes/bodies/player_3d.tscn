@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dl057s1aafnpk"]
+
+[ext_resource type="PackedScene" uid="uid://brdxd2e3xjnik" path="res://scenes/bodies/body_3d.tscn" id="1_uriw5"]
+[ext_resource type="Script" uid="uid://bulupmkvhddk3" path="res://scripts/bodies/player_3d.gd" id="2_gcb5y"]
+
+[node name="Player3D" unique_id=1579572335 instance=ExtResource("1_uriw5")]
+script = ExtResource("2_gcb5y")
+thrust_force = 200000.0
+mass_rate = 50000.0
+
+[node name="Camera3D" type="Camera3D" parent="." index="1" unique_id=1635213795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.1794112)
