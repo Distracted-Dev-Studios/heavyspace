@@ -10,6 +10,7 @@ extends Node3D
 @export_group("Generation")
 @export var n_generation_radius_in_cells: int = 5
 @export var body_spawn_chance: float = 0.05
+@export var body_mass_scaling: float = 200000
 
 var rng := RandomNumberGenerator.new()
 var max_cells = (n_generation_radius_in_cells * 2) ** 3
@@ -61,7 +62,7 @@ func _generate_body(cell_position: Vector3i) -> void:
 	var body := body_scene.instantiate() as Body3D
 	cells[cell_position].body = body
 	body.position = _cell_to_position(cell_position)
-	body.mass = rng.randf() * 100000
+	body.mass = rng.randf() * body_mass_scaling
 	body.is_static = true
 	add_child(body)
 	body_cells[cell_position] = true
