@@ -5,11 +5,10 @@ extends Node2D
 
 
 func _process(_delta: float) -> void:
-	label.text = "Density: %.1f\nMass: %.1f\nSpeed: %.0f\nPolarity: %s\nQ/E: density  Arrows: thrust  F: flip polarity  R: restart" % [
-		player.density,
+	label.text = "Mass: %.1f\nSpeed: %.0f\nOrbit Locked?: %s\nQ/E: Size\nF: Lock Orbit\nR: restart" % [
 		player.mass,
 		player.velocity.length(),
-		"+" if player.polarity == Body.Polarity.POSITIVE else "-",
+		"True" if player.is_orbit_locked else "False",
 	]
 	if Input.is_physical_key_pressed(KEY_R):
 		get_tree().reload_current_scene()

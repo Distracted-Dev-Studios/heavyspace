@@ -9,20 +9,30 @@
 [node name="Main" type="Node2D" unique_id=1708304504]
 script = ExtResource("1_0wfyh")
 
-[node name="Player" parent="." unique_id=38709278 instance=ExtResource("1_o5qli")]
-position = Vector2(-64, 1)
-
-[node name="Planet" parent="." unique_id=779685626 instance=ExtResource("3_jyhfs")]
-position = Vector2(-244, -1)
-is_static = true
-polarity = 1
-
-[node name="Planet2" parent="." unique_id=337148612 instance=ExtResource("3_jyhfs")]
-position = Vector2(161, -1)
-is_static = true
-polarity = -1
-
 [node name="HUD" parent="." unique_id=2061443530 instance=ExtResource("4_tbgi4")]
 
 [node name="GravityManager" type="Node" parent="." unique_id=1471896020]
 script = ExtResource("5_tbgi4")
+
+[node name="Player" parent="." unique_id=38709278 instance=ExtResource("1_o5qli")]
+position = Vector2(-64, 1)
+
+[node name="Planet" parent="." unique_id=779685626 instance=ExtResource("3_jyhfs")]
+position = Vector2(-242, 0)
+is_static = true
+
+[node name="Planet2" parent="." unique_id=337148612 instance=ExtResource("3_jyhfs")]
+position = Vector2(160, 0)
+is_static = true
+
+[node name="Planet3" parent="." unique_id=848744760 instance=ExtResource("3_jyhfs")]
+position = Vector2(-161, 125)
+is_static = true
+
+[node name="Planet4" parent="." unique_id=1910696397 instance=ExtResource("3_jyhfs")]
+position = Vector2(-28, -132)
+is_static = true
+
+[node name="Planet6" parent="." unique_id=1407934259 instance=ExtResource("3_jyhfs")]
+position = Vector2(61, 100)
+is_static = true
